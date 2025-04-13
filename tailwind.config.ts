@@ -54,8 +54,8 @@ export default {
 				},
 				
 				// Custom colors for 3zedshop
-				dark: "#1A1F2C",
-				darker: "#12151e",
+				dark: "#090705",
+				darker: "#040303",
 				red: "#c4071c",
 				"red-light": "#d65667",
 				"red-dark": "#a01c2d",
