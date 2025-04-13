@@ -5,27 +5,46 @@
 
 @layer base {
   :root {
-    --background: 0 0% 3%; /* Changed to a pure black with very low lightness */
+    /* Fond du site ultra noir */
+    --background: 0 0% 1.5%; /* Avant : 3% => Maintenant : 1.5% */
+
+    /* Texte principal blanc presque pur */
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+
+    /* Couleur des cartes plus foncée */
+    --card: 240 10% 2.5%; /* Avant : 3.9% => Maintenant : 2.5% */
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+
+    /* Popover + éléments sur fond foncé */
+    --popover: 240 10% 2.5%;
     --popover-foreground: 0 0% 98%;
+
+    /* Couleur principale (boutons, liens) */
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
+
+    /* Couleurs secondaires (bordures, hover) */
+    --secondary: 240 3.7% 12%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
+
+    --muted: 240 3.7% 12%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
+
+    --accent: 240 3.7% 12%;
     --accent-foreground: 0 0% 98%;
+
+    /* Rouge pour actions critiques */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+
+    --border: 240 3.7% 12%;
+    --input: 240 3.7% 12%;
     --ring: 240 4.9% 83.9%;
+
     --radius: 0.75rem;
   }
+}
+
   
   * {
     @apply border-border selection:bg-red/10 selection:text-white;
