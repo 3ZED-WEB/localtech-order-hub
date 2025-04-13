@@ -62,4 +62,20 @@
   .red-gradient {
     @apply bg-gradient-to-r from-red to-red-light;
   }
+  
+  .green-gradient {
+    @apply bg-gradient-to-r from-green to-green-light;
+  }
+
+  .btn-action {
+    @apply transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .btn-red {
+    @apply bg-red hover:bg-red-light text-white btn-action;
+  }
+  
+  .btn-green {
+    @apply bg-green hover:bg-green-light text-white btn-action;
+  }
 }

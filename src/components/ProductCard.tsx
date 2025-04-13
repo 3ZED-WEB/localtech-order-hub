@@ -18,8 +18,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const handleAddToCart = () => {
     addToCart(product);
     toast({
-      title: "Added to cart",
-      description: `${product.name} has been added to your cart.`,
+      title: "Ajouté au panier",
+      description: `${product.name} a été ajouté à votre panier.`,
       duration: 2000,
     });
   };
@@ -28,8 +28,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
     setIsWishlisted(!isWishlisted);
     if (!isWishlisted) {
       toast({
-        title: "Added to wishlist",
-        description: `${product.name} has been added to your wishlist.`,
+        title: "Ajouté aux favoris",
+        description: `${product.name} a été ajouté à vos favoris.`,
         duration: 2000,
       });
     }
@@ -67,16 +67,18 @@ const ProductCard = ({ product }: ProductCardProps) => {
         
         <div className="flex justify-between items-center text-xs text-gray-light mb-4">
           <span>{product.brand} {product.model}</span>
-          <span className="text-right">{product.stock > 0 ? 'In Stock' : 'Out of Stock'}</span>
+          <span className={`text-right ${product.stock > 0 ? 'text-green-light' : 'text-red'}`}>
+            {product.stock > 0 ? 'En stock' : 'Rupture de stock'}
+          </span>
         </div>
         
         <Button
           onClick={handleAddToCart}
-          className={`w-full bg-red hover:bg-red-light text-white`}
+          className={`w-full ${product.stock > 0 ? 'bg-green hover:bg-green-light' : 'bg-gray-dark'} text-white`}
           disabled={product.stock === 0}
         >
           <ShoppingCart className="mr-2 h-4 w-4" />
-          Add to Cart
+          {product.stock > 0 ? 'Ajouter au panier' : 'Indisponible'}
         </Button>
       </div>
     </div>
