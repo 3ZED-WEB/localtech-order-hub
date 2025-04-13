@@ -53,8 +53,11 @@
   body {
     @apply bg-dark text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+
+    /* Sécurité supplémentaire pour forcer la couleur de fond */
+    background-color: #090705 !important;
   }
-  
+
   html {
     @apply scroll-smooth;
   }
@@ -99,6 +102,4 @@
   }
 }
 
-body {
-  background-color: #090705 !important;
-}
+
