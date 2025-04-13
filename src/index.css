@@ -6,8 +6,8 @@
 @layer base {
   :root {
     /* Fond du site ultra noir */
-    --background: #090705;
-
+    --background: hsl(0 4% 2%) !important;
+    
     /* Texte principal blanc presque pur */
     --foreground: 0 0% 98%;
 
@@ -55,7 +55,7 @@
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
 
     /* Sécurité supplémentaire pour forcer la couleur de fond */
-    background-color: #090705 !important;
+    background-color: hsl(0 4% 2%) !important;
   }
 
   html {
