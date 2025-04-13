@@ -98,3 +98,7 @@
     @apply bg-green hover:bg-green-light text-white btn-action;
   }
 }
+
+body {
+  background-color: #090705 !important;
+}
