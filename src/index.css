@@ -6,7 +6,7 @@
 @layer base {
   :root {
     /* Fond du site ultra noir */
-    --background: 0 0% 1.5%; /* Avant : 3% => Maintenant : 1.5% */
+    --background: #090705;
 
     /* Texte principal blanc presque pur */
     --foreground: 0 0% 98%;
