@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,9 +56,9 @@ export default {
 				// Custom colors for 3zedshop
 				dark: "#1A1F2C",
 				darker: "#12151e",
-				red: "#ea384c",
-				"red-light": "#f05c6d",
-				"red-dark": "#c42c3d",
+				red: "#c42c3d",
+				"red-light": "#d65667",
+				"red-dark": "#a01c2d",
 				green: "#2e7d32",
 				"green-light": "#4caf50",
 				"green-dark": "#1b5e20",
