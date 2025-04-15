@@ -45,22 +45,20 @@
   }
 }
 
-  
-  * {
-    @apply border-border selection:bg-red/10 selection:text-white;
-  }
-  
-  body {
-    @apply bg-dark text-foreground antialiased;
-    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+* {
+  @apply border-border selection:bg-red/10 selection:text-white;
+}
 
-    /* Sécurité supplémentaire pour forcer la couleur de fond */
-    background-color: hsl(0 4% 2%) !important;
-  }
+body {
+  @apply bg-dark text-foreground antialiased;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
 
-  html {
-    @apply scroll-smooth;
-  }
+  /* Sécurité supplémentaire pour forcer la couleur de fond */
+  background-color: hsl(0 4% 2%) !important;
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 @layer utilities {
@@ -101,5 +99,3 @@
     @apply bg-green hover:bg-green-light text-white btn-action;
   }
 }
-
-
