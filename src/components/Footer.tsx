@@ -81,7 +81,7 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Kontakté Nu</h3>
             <address className="not-italic">
               <p className="mb-2">3zed Street, Tech City</p>
               <p className="mb-2">Local Area, 12345</p>
