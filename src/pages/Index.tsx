@@ -12,7 +12,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen"
-       style={{ backgroundColor: '#090705' }}
+       style={{ backgroundColor: '#232429' }}
             >
       <Header />
       <main className="flex-grow">
