@@ -54,7 +54,7 @@ body {
   font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
 
   /* Sécurité supplémentaire pour forcer la couleur de fond */
-  background-color: hsl(0 4% 2%) !important;
+  background-color: hsl(0 4% 9%) !important;
 }
 
 html {
