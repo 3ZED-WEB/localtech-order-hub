@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
@@ -63,6 +62,58 @@ const FeaturedProducts = () => {
       rating: 4.5,
       featured: true,
     },
+    {
+      id: '5',
+      name: 'RazerX Pro',
+      category: 'Gaming',
+      price: 129.99,
+      currency: '$',
+      image: '/placeholder.svg',
+      brand: 'Razer',
+      model: 'Pro Gaming',
+      stock: 20,
+      rating: 4.9,
+      featured: true,
+    },
+    {
+      id: '6',
+      name: 'SteelSeries Arctis',
+      category: 'Headset',
+      price: 149.99,
+      currency: '$',
+      image: '/placeholder.svg',
+      brand: 'SteelSeries',
+      model: 'Arctis 7',
+      stock: 15,
+      rating: 4.8,
+      featured: true,
+    },
+    {
+      id: '7',
+      name: 'MSI Gaming Laptop',
+      category: 'Martique',
+      price: 1299.99,
+      currency: '$',
+      image: '/placeholder.svg',
+      brand: 'MSI',
+      model: 'GF65',
+      stock: 7,
+      rating: 4.7,
+      featured: true,
+    },
+    {
+      id: '8',
+      name: 'LocalTech Keyboard',
+      category: 'Local',
+      price: 89.99,
+      currency: '$',
+      image: '/placeholder.svg',
+      brand: 'LocalTech',
+      model: 'MK-101',
+      stock: 25,
+      rating: 4.6,
+      featured: true,
+    }
   ];
 
   const categories = ['All', 'Martique', 'Local', 'Gaming', 'Controller', 'Headset'];
@@ -77,7 +128,6 @@ const FeaturedProducts = () => {
   return (
     <section className="py-16 px-6 bg-darker">
       <div className="container mx-auto">
-        {/* Category filters */}
         <div className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex overflow-x-auto scrollbar-none pb-2 space-x-4">
             {categories.map((category) => (
@@ -108,7 +158,6 @@ const FeaturedProducts = () => {
           </div>
         </div>
         
-        {/* Products grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
